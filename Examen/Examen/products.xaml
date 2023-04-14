@@ -1,0 +1,46 @@
+﻿<Page x:Class="Examen.products"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Examen"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="products">
+
+    <Grid Background="white">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23.885"/>
+            <RowDefinition Height="26.115"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.RowSpan="2">
+            <TextBlock>Заказы:</TextBlock>
+        </StackPanel>
+        <DataGrid Grid.Row="2" Name="DTGridClient" ColumnWidth="*" IsReadOnly="True" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Номер_заказа" Binding="{Binding ID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Статус_заказа" Binding="{Binding Статус_заказа}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата доставки" Binding="{Binding Дата_доставки}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Пункт выдачи" Binding="{Binding Пункт_выдачи}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding Дата_заказа}"></DataGridTextColumn>
+                <DataGridTextColumn Header="ФИОКлиента" Binding="{Binding ФИО_клинта}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Код получения" Binding="{Binding Код_получения}"></DataGridTextColumn>
+                <!--РЕДАКТИРОВАНИЕ-->
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--РЕДАКТИРОВАНИЕ-->
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--ДОБАВЛЕНИЕ, УДАЛЕНИЕ-->
+        <Button Margin="362,5" Content="Добавить" Grid.Row="3" Width="75px" Name="BtnAdd" Click="BtnAdd_Click"></Button>
+        <Button Margin="5,5,0,5" Content="Удалить" Grid.Row="3" Width="75px" HorizontalAlignment="Left" Name="BtnDel" Click="BtnDel_Click"></Button>
+        <!--ДОБАВЛЕНИЕ, УДАЛЕНИЕ-->
+    </Grid>
+</Page>

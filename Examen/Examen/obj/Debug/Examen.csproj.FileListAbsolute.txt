@@ -1,0 +1,9 @@
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\AddEdit.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\LoginView.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\MainWindow.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\products.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\App.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\Examen_Content.g.cs
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\Examen_MarkupCompile.cache
+C:\Users\student.B313-2\source\repos\Examen\Examen\obj\Debug\Examen_MarkupCompile.lref
